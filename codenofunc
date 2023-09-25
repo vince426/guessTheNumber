@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@1,300&family=PT+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        
+        p {
+            text-align: center;
+            padding-top: 240px;
+            font-family: Poppins;
+            color: rgb(227, 227, 123);
+        }
+        
+        .btn-container {
+            text-align: center;
+        
+        }
+        
+        .btn-container button{
+            font-family: Poppins;
+            font-weight: 600;
+            background-color: #1E90FF;
+            color: white;
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            text-decoration: none;
+            border: none;
+            margin: 0px 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgb(238, 255, 1);
+        }
+        
+        .btn-container button:hover{
+            background-color: white;
+            color: black;
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+</style>
+</head>
+<body>
+
+    <p>Guess the Number</p>
+
+    <div class="btn-container">
+        <button onclick="
+            let numberOne = 1;
+
+            if (numberOne === theNumber){
+                alert('The number is 1. Congrats');
+            }
+            else if (numberOne < theNumber) {
+                alert('The number is too small.');
+            }
+            else {
+                alert('The number is too large.');
+            }
+        ">1</button>     
+
+
+        <button onclick="
+            let numberTwo = 2;
+
+            if (numberTwo === theNumber){
+                alert('The number is 2. Congrats');
+            }
+            else if (numberTwo < theNumber) {
+                alert('The number is too small.');
+            }
+            else {
+                alert('The number is too large.');
+            }
+        ">2</button>                                  
+
+        <button onclick="
+            let numberThree = 3;
+
+            if (numberThree === theNumber){
+                alert('The number is 3. Congrats!');
+            }
+            else if (numberThree < theNumber) {
+                alert('The number is too small.');
+            }
+            else {
+                alert('The number is too large.');
+            }                                       
+        ">3</button>                                                    
+
+        <button onclick="
+            let numberFour = 4;
+
+            if (numberFour === theNumber){
+                alert('The number is 4. Congrats!');
+            }
+            else if (numberFour < theNumber) {
+                alert('The number is too small.');
+            }
+            else {
+                alert('The number is too large.');
+            }   
+        ">4</button>                                                    
+
+        <button onclick="
+            let numberFive = 5;
+
+            if (numberFive === theNumber){
+                alert('The number is 5. Congrats!');
+            }
+            else if (numberFive < theNumber) {
+                alert('The number is too small.');
+            }
+            else {
+                alert('The number is too large.');
+            }   
+        ">5</button>                                                        
+
+        <button onclick="
+            let numberSix = 6;
+
+            if (numberSix === theNumber){
+                alert('The number is 6. Congrats!');
+            }
+            else if (numberSix < theNumber) {
+                alert('The number is too small.');
+            }
+            else {
+                alert('The number is too large.');
+            }   
+        ">6</button>                                                      
+
+        <button onclick="
+            let numberSeven = 7;
+
+            if (numberSeven === theNumber){
+                alert('The number is 7. Congrats!');
+            }
+            else if (numberSeven < theNumber) {
+                alert('The number is too small.');
+            }
+            else {
+                alert('The number is too large.');
+            }  
+        ">7</button>                                                             
+
+        <button onclick="
+            let numberEight = 8;
+
+            if (numberEight === theNumber){
+                alert('The number is 8. Congrats!');
+            }
+            else if (numberEight < theNumber) {
+                alert('The number is too small.');
+            }
+            else {
+                alert('The number is too large.');
+            }  
+        ">8</button>                                                               
+
+        <button onclick="
+            let numberNine = 7;
+
+            if (numberNine === theNumber){
+                alert('The number is 9. Congrats!');
+            }
+            else if (numberNine< theNumber) {
+                alert('The number is too small.');
+            }
+            else {
+                alert('The number is too large.');
+            }  
+        ">9</button>                                                                
+            
+
+    
+    <script>
+        const randomNumber = Math.random();
+        console.log(randomNumber);
+
+        let theNumber;
+
+        if(randomNumber >= 0 && randomNumber < 0.1 ){
+            theNumber = 0;
+        }
+        else if (randomNumber >= 0.1 && randomNumber < 0.2){
+            theNumber = 1;
+        }
+        else if (randomNumber >= 0.2 && randomNumber < 0.3){
+            theNumber = 2;
+        }
+        else if (randomNumber >= 0.3 && randomNumber < 0.4){
+            theNumber = 3;
+        }
+        else if (randomNumber >= 0.4 && randomNumber < 0.5){
+            theNumber = 4;
+        }
+        else if (randomNumber >= 0.5 && randomNumber < 0.6){
+            theNumber = 5;
+        }
+        else if (randomNumber >= 0.6 && randomNumber < 0.7){
+            theNumber = 6;
+        }
+        else if (randomNumber >= 0.7 && randomNumber < 0.8){
+            theNumber = 7;
+        }
+        else if (randomNumber >= 0.8 && randomNumber < 0.9){
+            theNumber = 8;
+        }
+        else if (randomNumber >= 0.9 && randomNumber < 1){
+            theNumber = 9;
+        }
+
+        console.log(theNumber);
+    </script>
+
+</body>
+</html>
